@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Questions and Support
+    url: https://github.com/dvoraj75/herdr-cowbell/discussions
+    about: Ask questions and get help in GitHub Discussions.
