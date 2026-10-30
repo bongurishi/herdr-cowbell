@@ -1,0 +1,91 @@
+name: Bug report
+description: Report a problem with herdr-cowbell
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please provide the details below so we can investigate.
+
+  - type: input
+    id: herdr_version
+    attributes:
+      label: herdr version
+      description: Which version of herdr are you using?
+      placeholder: "0.9.3"
+    validations:
+      required: true
+
+  - type: input
+    id: cowbell_version
+    attributes:
+      label: herdr-cowbell version
+      description: Which version of the plugin are you using?
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: operating_system
+    attributes:
+      label: Operating system
+      placeholder: "Ubuntu 24.04 / macOS"
+    validations:
+      required: true
+
+  - type: input
+    id: terminal
+    attributes:
+      label: Terminal
+      placeholder: "Kitty / Ghostty / WezTerm"
+    validations:
+      required: true
+
+  - type: input
+    id: font_and_preset
+    attributes:
+      label: Font and icon preset
+      description: Include your terminal font and Cowbell preset.
+      placeholder: "JetBrainsMono Nerd Font, preset: nerd"
+    validations:
+      required: true
+
+  - type: textarea
+    id: ctl_status
+    attributes:
+      label: ctl.js status output
+      description: Paste the output of the Cowbell status command.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: plugin_log
+    attributes:
+      label: Plugin log
+      description: Paste relevant herdr-cowbell plugin logs.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Explain what happened and how to reproduce it.
+      placeholder: |
+        1. Start herdr
+        2. Open a tab with an agent
+        3. Observe the problem
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
